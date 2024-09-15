@@ -1,0 +1,121 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Neon background */
+  body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background-image: url('../asset/neon_city.jpeg');
+    background-color: #0a0a0a; /* Dark city background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container with transparent neon-like effect */
+  .container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.3); /* Neon glow */
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Neon glow header */
+  h1 {
+    font-size: 36px;
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 30px #00ffea;
+    animation: pulse 2s infinite; /* Keep the pulse animation */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Links with neon border and glow */
+  .link-button {
+    display: block;
+    background-color: transparent; /* Transparent background */
+    color: #00ffea; /* Neon blue text */
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 2px solid #00ffea;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea;
+  }
+  
+  .link-button:hover {
+    color: #fff; /* Text changes to white on hover */
+    background-color: #00ffea; /* Neon blue background */
+    box-shadow: 0 0 20px #00ffea, 0 0 30px #00ffea;
+    transform: scale(1.1); /* Slightly grow the link */
+  }
+  
+  /* Neon button */
+  button {
+    background-color: transparent;
+    color: #ff007b;
+    padding: 10px 20px;
+    border: 2px solid #ff007b;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 5px #ff007b, 0 0 10px #ff007b;
+  }
+  
+  button:hover {
+    background-color: #ff007b;
+    color: white;
+    box-shadow: 0 0 20px #ff007b, 0 0 30px #ff007b;
+    transform: scale(1.1);
+  }
+  
+  /* Footer with neon glow */
+  footer {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #ff007b;
+    opacity: 0;
+    animation: bounceIn 1.2s ease-out forwards;
+    animation-delay: 1s;
+    text-shadow: 0 0 5px #ff007b, 0 0 10px #ff007b;
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    80% {
+      transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
