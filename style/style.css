@@ -92,13 +92,13 @@
   
   /* Footer with neon glow */
   footer {
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 20px;
     color: #ff007b;
     opacity: 0;
     animation: bounceIn 1.2s ease-out forwards;
     animation-delay: 1s;
-    text-shadow: 0 0 5px #ff007b, 0 0 10px #ff007b;
+    text-shadow: 0 0 5px #ff007b, 0 0 10px #ff002f;
   }
   
   @keyframes bounceIn {
